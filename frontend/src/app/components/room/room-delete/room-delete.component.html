@@ -1,0 +1,29 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title>
+        Excluir Pessoa
+    </mat-card-title>
+    
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Название" [value]="room.name" disabled name="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Страна" [value]="room.country" disabled name="country">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder=Лампочка" [value]="room.turnOn" disabled name="turnOn">
+        </mat-form-field>
+
+    </form>
+
+<!--    <button mat-raised-button (click)="delete()" color="warn">-->
+<!--        Excluir-->
+<!--    </button>-->
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancel
+    </button>
+</mat-card>

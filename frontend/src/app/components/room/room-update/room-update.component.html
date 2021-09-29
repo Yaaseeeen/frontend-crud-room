@@ -1,0 +1,36 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title>
+        Включить/выключить свет
+    </mat-card-title>
+    
+    <form>
+
+        <mat-form-field >
+            <input matInput placeholder="Название" [(ngModel)]="room.name" name="name" [disabled]="true">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Страна" [(ngModel)]="room.country.name" [disabled]="true" name="country">
+        </mat-form-field>
+        
+        <mat-form-field>
+
+            <button mat-raised-button [class.red]="isTurnOn"
+                    (click)="turnOnOff()" color="primary" name="turnOn">
+                {{isTurnOnOff}}
+            </button>
+            ngModel {{isTurnOnOff}}
+        </mat-form-field>
+        
+
+        
+    </form>
+    
+    <button mat-raised-button (click)="updateRoom()" color="primary">
+        Сохранить
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Отмена
+    </button>
+</mat-card>

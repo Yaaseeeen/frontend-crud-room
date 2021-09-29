@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 15px;
+}
+
+.red {
+    background-color: #b5bb0e;
+}
